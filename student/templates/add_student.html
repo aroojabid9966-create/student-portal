@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_Student</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <h2>ADD_STUDENT</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label>FULL NAME:</label><br>
+        <input type="text" name="name" required>
+        <br><br>
+        <label>ROLL_NUM:</label><br>
+        <input type="text" name="roll_num" required>
+        <br><br>
+        <label>COURSE:</label><br>
+        <input type="text" name="course" required>
+        <br><br>
+        <label>AGE:</label><br>
+        <input type="number" name="age" required>
+        <br><br>
+        <label>EMAIL:</label><br>
+        <input type="email" name="email" required><br>
+        <br><br>
+        <label>ADDRESS:</label><br>
+        <input type="text" name="address" required>
+        <br><br>
+        <button type="submit">add_student</button>
+
+    </form>
+    <br>
+    <a href="/">BACK TO HOME</a>
+    {% endblock %}
+    
+</body>
+</html>

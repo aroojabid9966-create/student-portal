@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_detail</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <h1>Student_detail</h1>
+    <p><strong>FULL_NAME:</strong>{{std.name}}</p>
+    <p><strong>ROLL_NUM:</strong>{{std.roll_num}}</p>
+    <p><strong>COURSE:</strong>{{std.course}}</p>
+    <p><strong>AGE:</strong>{{std.age}}</p>
+    <p><strong>EMAIL:</strong>{{std.email}}</p>
+    <p><strong>ADDRESS:</strong>{{std.address}}</p>
+    <br>
+    <a href="/">Back to Home</a>
+    {% endblock %}
+    
+</body>
+</html>
